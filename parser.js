@@ -1,10 +1,16 @@
-// let sudokuString = '4.....8.5.3..........7......2.....6.....8.4......1.......6.3.7.5..2.....1.4......'
 
-// let lines = [];
+// let sudoku = {lines : [], cols : [], squares : []}
 
-// lines = sudokuString.split('')
+// let sudoku = new Sudoku([],[],[])
 
+function parse(stringGrid) {
+    let resultArray;
+    while(stringGrid.length>0){
+        resultArray += stringGrid.replace('^.{9}','')
+    }
+    console.log(resultArray)
+    //TODO 
+    return 'todo'
+}
 
-// console.log(lines)
-
-// console.log(sudokuString.slice(0,9))
+export {parse}
